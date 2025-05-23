@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
     {
       id: 5,
       title: 'Juno',
-      description: 'HTML-based project with sleek UI design.',
+      description: 'Juno is an AI chatbot that empowers women with 24/7 access to essential legal, health, and safety information.',
       image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg',
       tags: ['HTML','Dialogflow', 'Node.js', 'API'],
       liveUrl: 'https://github.com/Haloween-arch/juno',
@@ -57,16 +57,6 @@ const Projects: React.FC = () => {
     },
     {
       id: 6,
-      title: 'MERN Assignment',
-      description: 'Assignment project using MERN stack.',
-      image: 'https://images.pexels.com/photos/7567460/pexels-photo-7567460.jpeg',
-      tags: ['JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-      liveUrl: 'https://github.com/Haloween-arch/Mern_Assignment',
-      githubUrl: 'https://github.com/Haloween-arch/Mern_Assignment',
-      category: 'web',
-    },
-    {
-      id: 7,
       title: 'Flight Finder',
       description: 'A JavaScript project to search and book flights.',
       image: 'https://images.pexels.com/photos/5849562/pexels-photo-5849562.jpeg',
@@ -76,7 +66,7 @@ const Projects: React.FC = () => {
       category: 'app',
     },
     {
-      id: 8,
+      id: 7,
       title: 'Potato Disease Model',
       description: 'A ML model in Jupyter Notebook for potato disease prediction.',
       image: 'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg',
