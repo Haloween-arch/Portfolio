@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 interface NavbarProps {
@@ -11,22 +11,17 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Handle scroll background
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -37,21 +32,26 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm' 
+        isScrolled
+          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <div className="flex-shrink-0 font-bold text-xl tracking-tight">
-            <a href="#home" className="text-gray-900 dark:text-white transition-colors">
+            <a
+              href="#home"
+              className="text-gray-900 dark:text-white transition-colors"
+            >
               <span className="text-blue-600 dark:text-blue-400">Port</span>folio
             </a>
           </div>
-          
+
+          {/* Desktop Nav */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
@@ -63,12 +63,19 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                   {link.name}
                 </a>
               ))}
-              <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+              <ThemeToggle
+                darkMode={darkMode}
+                toggleDarkMode={toggleDarkMode}
+              />
             </div>
           </div>
-          
+
+          {/* Mobile */}
           <div className="flex md:hidden">
-            <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <ThemeToggle
+              darkMode={darkMode}
+              toggleDarkMode={toggleDarkMode}
+            />
             <button
               onClick={toggleMenu}
               className="ml-2 inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
@@ -80,10 +87,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
       </div>
 
       {/* Mobile menu */}
-      <div 
+      <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
-          isOpen 
-            ? 'max-h-screen opacity-100' 
+          isOpen
+            ? 'max-h-screen opacity-100'
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}
       >
