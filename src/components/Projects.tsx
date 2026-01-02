@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
         'https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg',
       tags: ['React', 'FastAPI', 'OCR', 'NLP'],
       liveUrl: 'https://github.com/Haloween-arch/meditalk',
-      githubUrl: 'https://github.com/Haloween-arch/meditalk',
+      githubUrl: 'https://meditalk-1.onrender.com/',
       category: 'web',
     },
     {
@@ -126,7 +126,7 @@ const Projects: React.FC = () => {
         'AI',
       ],
       liveUrl: 'https://github.com/Haloween-arch/CodeSage',
-      githubUrl: 'https://github.com/Haloween-arch/CodeSage',
+      githubUrl: 'https://code-sage-ai-swart.vercel.app/',
       category: 'ai',
     },
   ];
