@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg',
       tags: ['Dialogflow', 'Node.js', 'API'],
-      liveUrl: 'https://github.com/Haloween-arch/mausam',
+      liveUrl: 'https://mausam-gvp4.vercel.app/',
       githubUrl: 'https://github.com/Haloween-arch/mausam',
       category: 'app',
     },
