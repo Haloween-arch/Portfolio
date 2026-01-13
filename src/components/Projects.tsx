@@ -4,132 +4,151 @@ import ProjectCard from './ProjectCard';
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<string>('all');
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Meditalk',
-      description:
-        'A healthcare communication platform using AI for simplified medical information.',
-      image:
-        'https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg',
-      tags: ['React', 'FastAPI', 'OCR', 'NLP'],
-      liveUrl: 'https://meditalk-1.onrender.com/',
-      githubUrl: 'https://github.com/Haloween-arch/meditalk',
-      category: 'web',
-    },
-    {
-      id: 2,
-      title: 'Mausam',
-      description:
-        'A weather chatbot using Dialogflow and APIs for real-time forecasts.',
-      image:
-        'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg',
-      tags: ['Dialogflow', 'Node.js', 'API'],
-      liveUrl: 'https://mausam-gvp4.vercel.app/',
-      githubUrl: 'https://github.com/Haloween-arch/mausam',
-      category: 'app',
-    },
-    {
-      id: 3,
-      title: 'Hospital Management System',
-      description:
-        'Full-featured hospital management system with Django and MySQL.',
-      image:
-        'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg',
-      tags: ['Django', 'MySQL', 'Bootstrap'],
-      liveUrl: 'https://github.com/Haloween-arch/hospital',
-      githubUrl: 'https://github.com/Haloween-arch/hospital',
-      category: 'web',
-    },
-    {
-      id: 4,
-      title: 'Evolve',
-      description: 'A Java-based software with BSD 3-Clause License.',
-      image:
-        'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
-      tags: ['Java', 'BSD License'],
-      liveUrl: 'https://github.com/Haloween-arch/evolve',
-      githubUrl: 'https://github.com/Haloween-arch/evolve',
-      category: 'app',
-    },
-    {
-      id: 5,
-      title: 'Juno',
-      description:
-        'An AI chatbot empowering women with legal, health, and safety information.',
-      image:
-        'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg',
-      tags: ['HTML', 'Dialogflow', 'Node.js', 'API'],
-      liveUrl: 'https://github.com/Haloween-arch/juno',
-      githubUrl: 'https://github.com/Haloween-arch/juno',
-      category: 'web',
-    },
-    {
-      id: 6,
-      title: 'Flight Finder',
-      description: 'A JavaScript-based flight search and booking system.',
-      image:
-        'https://images.pexels.com/photos/5849562/pexels-photo-5849562.jpeg',
-      tags: ['JavaScript', 'MongoDB'],
-      liveUrl: 'https://github.com/Haloween-arch/Flight_Finder',
-      githubUrl: 'https://github.com/Haloween-arch/Flight_Finder',
-      category: 'app',
-    },
-    {
-      id: 7,
-      title: 'Potato Disease Model',
-      description:
-        'A machine learning model for potato disease prediction using Jupyter.',
-      image:
-        'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg',
-      tags: ['Jupyter', 'ML', 'Plant Pathology'],
-      liveUrl:
-        'https://github.com/Haloween-arch/Potato_Disease_Model',
-      githubUrl:
-        'https://github.com/Haloween-arch/Potato_Disease_Model',
-      category: 'ai',
-    },
-    {
-      id: 8,
-      title: 'AgroSphereX 🌾',
-      description:
-        'An AI-powered farming assistant using a multi-agent system for advisory, weather, soil, and market insights.',
-      image:
-        'https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg',
-      tags: [
-        'React',
-        'Vite',
-        'FastAPI',
-        'LangChain',
-        'Ollama',
-        'Whisper',
-        'AI Agents',
-      ],
-      liveUrl: 'https://github.com/Haloween-arch/AgroSphereX',
-      githubUrl: 'https://github.com/Haloween-arch/AgroSphereX',
-      category: 'ai',
-    },
-    {
-      id: 9,
-      title: 'Code-Sage-AI 🧠',
-      description:
-        'An intelligent static code reviewer that analyzes quality, security, and efficiency using AST and rule-based analysis.',
-      image:
-        'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg',
-      tags: [
-        'Python',
-        'FastAPI',
-        'AST',
-        'Static Analysis',
-        'Pylint',
-        'Bandit',
-        'AI',
-      ],
-      liveUrl: 'https://code-sage-ai-swart.vercel.app/',
-      githubUrl: 'https://github.com/Haloween-arch/Code-Sage-AI',
-      category: 'ai',
-    },
-  ];
+const projects = [
+  {
+    id: 1,
+    title: 'JobTune 🎯',
+    description:
+      'An AI-powered job matching and resume optimization platform that helps users tailor resumes and find better job opportunities.',
+    image:
+      'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg',
+    tags: [
+      'React',
+      'AI',
+      'Resume Analysis',
+      'NLP',
+      'FastAPI',
+    ],
+    liveUrl: 'https://jobtune-three.vercel.app/',
+    githubUrl: 'https://github.com/Haloween-arch/JobTune',
+    category: 'ai',
+  },
+  {
+    id: 2,
+    title: 'Code-Sage-AI 🧠',
+    description:
+      'An intelligent static code reviewer that analyzes quality, security, and efficiency using AST and rule-based analysis.',
+    image:
+      'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg',
+    tags: [
+      'Python',
+      'FastAPI',
+      'AST',
+      'Static Analysis',
+      'Pylint',
+      'Bandit',
+      'AI',
+    ],
+    liveUrl: 'https://code-sage-ai-swart.vercel.app/',
+    githubUrl: 'https://github.com/Haloween-arch/Code-Sage-AI',
+    category: 'ai',
+  },
+  {
+    id: 3,
+    title: 'Meditalk',
+    description:
+      'A healthcare communication platform using AI for simplified medical information.',
+    image:
+      'https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg',
+    tags: ['React', 'FastAPI', 'OCR', 'NLP'],
+    liveUrl: 'https://meditalk-1.onrender.com/',
+    githubUrl: 'https://github.com/Haloween-arch/meditalk',
+    category: 'web',
+  },
+  {
+    id: 4,
+    title: 'Mausam',
+    description:
+      'A weather chatbot using Dialogflow and APIs for real-time forecasts.',
+    image:
+      'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg',
+    tags: ['Dialogflow', 'Node.js', 'API'],
+    liveUrl: 'https://mausam-gvp4.vercel.app/',
+    githubUrl: 'https://github.com/Haloween-arch/mausam',
+    category: 'app',
+  },
+  {
+    id: 5,
+    title: 'Hospital Management System',
+    description:
+      'Full-featured hospital management system with Django and MySQL.',
+    image:
+      'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg',
+    tags: ['Django', 'MySQL', 'Bootstrap'],
+    liveUrl: 'https://github.com/Haloween-arch/hospital',
+    githubUrl: 'https://github.com/Haloween-arch/hospital',
+    category: 'web',
+  },
+  {
+    id: 6,
+    title: 'Evolve',
+    description: 'A Java-based software with BSD 3-Clause License.',
+    image:
+      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
+    tags: ['Java', 'BSD License'],
+    liveUrl: 'https://github.com/Haloween-arch/evolve',
+    githubUrl: 'https://github.com/Haloween-arch/evolve',
+    category: 'app',
+  },
+  {
+    id: 7,
+    title: 'Juno',
+    description:
+      'An AI chatbot empowering women with legal, health, and safety information.',
+    image:
+      'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg',
+    tags: ['HTML', 'Dialogflow', 'Node.js', 'API'],
+    liveUrl: 'https://github.com/Haloween-arch/juno',
+    githubUrl: 'https://github.com/Haloween-arch/juno',
+    category: 'web',
+  },
+  {
+    id: 8,
+    title: 'Flight Finder',
+    description: 'A JavaScript-based flight search and booking system.',
+    image:
+      'https://images.pexels.com/photos/5849562/pexels-photo-5849562.jpeg',
+    tags: ['JavaScript', 'MongoDB'],
+    liveUrl: 'https://github.com/Haloween-arch/Flight_Finder',
+    githubUrl: 'https://github.com/Haloween-arch/Flight_Finder',
+    category: 'app',
+  },
+  {
+    id: 9,
+    title: 'Potato Disease Model',
+    description:
+      'A machine learning model for potato disease prediction using Jupyter.',
+    image:
+      'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg',
+    tags: ['Jupyter', 'ML', 'Plant Pathology'],
+    liveUrl:
+      'https://github.com/Haloween-arch/Potato_Disease_Model',
+    githubUrl:
+      'https://github.com/Haloween-arch/Potato_Disease_Model',
+    category: 'ai',
+  },
+  {
+    id: 10,
+    title: 'AgroSphereX 🌾',
+    description:
+      'An AI-powered farming assistant using a multi-agent system for advisory, weather, soil, and market insights.',
+    image:
+      'https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg',
+    tags: [
+      'React',
+      'Vite',
+      'FastAPI',
+      'LangChain',
+      'Ollama',
+      'Whisper',
+      'AI Agents',
+    ],
+    liveUrl: 'https://github.com/Haloween-arch/AgroSphereX',
+    githubUrl: 'https://github.com/Haloween-arch/AgroSphereX',
+    category: 'ai',
+  },
+];
+
 
   const filteredProjects =
     filter === 'all'
