@@ -20,7 +20,7 @@ const projects = [
       'FastAPI',
     ],
     liveUrl: 'https://jobtune-three.vercel.app/',
-    githubUrl: 'https://github.com/Haloween-arch/JobTune',
+    githubUrl: 'https://github.com/Haloween-arch/Jobtune',
     category: 'ai',
   },
   {
